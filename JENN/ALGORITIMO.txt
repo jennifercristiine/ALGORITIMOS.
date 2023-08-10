@@ -1,0 +1,56 @@
+
+Atividade 10
+//Um vendedor de uma loja de sapatos recebe como pagamento 20% de comissão sobre as vendas do mês e R$ 5,00 por cada par de sapatos vendido.
+ Escreva um algoritmo que, dado o valor total dasvendas do mês e o número de sapatos vendidos, mostre qual será o salário do vendedor naquele mês.
+
+ALGORITIMO Comissão
+
+VAR
+REAL: comissao1, comissao2, salario;
+
+INICIO
+
+ESCREVA ("Informe o valor total de vendas no mês");
+LEIA ("comissao1");
+
+ESCREVA  ("Informe o número de sapatos vendidos");
+LEIA (comissao2);
+
+salario <- (comissao1 / 5) + (comissao2 * 5)
+
+ESCREVA  ("O salário a receber este mês é de:", salario);
+
+FIM
+
+
+Atividade 11
+
+//Escreva um algoritmo que leia o número de votos brancos, o número de votos nulos e o número devotos válidos em um município.
+Escreva um algoritmo que calcule e escreva o percentual de votosbrancos, nulos e válidos em relação ao total de eleitores do município.
+
+ALGORITIMO Eleição
+
+VAR
+REAL: eleitores,votos_validos,votos_brancos,votos_nulos;
+
+INICIO
+
+ESCREVA ("Informe quantidade de eleitores no município");
+LEIA ("eleitores");
+
+ESCREVA ("Informe quantidade de votos validos");
+LEIA ("votos_validos");
+
+ESCREVA ("Informe quantidade de votos brancos");
+LEIA ("votos_brancos");
+
+ESCREVA ("Informe quantidade de votos nulos");
+LEIA ("votos_nulos");
+
+votos_validos <- (votos_validos / eleitores) ;
+votos_brancos <- (votos_brancos / eleitores) ;
+votos_nulos <- (votos_nulos / eleitores);
+
+ESCREVA ("O percentual de Votos validos é: ", votos validos "O percentual de Votos Brancos é: ",votos_brancos "O percentual de Votos Nulos é: ",votos_nulos);
+
+FIM
