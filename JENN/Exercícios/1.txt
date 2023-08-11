@@ -1,0 +1,234 @@
+EXERCÍCIO ALGORITIMO 
+
+Seja Bem-vindo (a) aos meus primeiros códigos 
+
+
+ALGORITIMO Atividade_1
+//Escreva um algoritmo que calcule a área de um triângulo cuja fórmula é base x altura / 2.
+
+VAR
+
+	INTEIRO: area, base, altura;
+
+INICIO
+
+	ESCREVA ("Informe a Base do Triângulo");
+	LEIA ("base");
+
+	ESCREVA ("Informe Altura do Triângulo");
+	LEIA ("altura");
+
+	area <- ( base * altura) / 2;
+
+	ESCREVA ("A Área do Triângulo é ", area);
+FIM
+
+
+ALGORITIMO Atividade_2
+
+//Escreva um algoritmo que leia horas, minutos e segundos do teclado e apresente o tempo total em segundos.
+
+VAR 
+
+	INTEIRO: horas, minutos, segundos, total;
+
+INICIO 
+	ESCREVA("Informe Horas");
+	LEIA("horas");
+
+	ESCREVA("Informe Minutos");
+	LEIA("minutos");
+	
+	ESCREVA("Informe Segundos");
+	LEIA("segundos");
+
+	total <- horas * 3600 + minutos * 60 + segundos;
+	
+	ESCREVA("Tempo total: ", total,"segundos.");
+FIM
+
+
+ALGORITIMO Atividade_3
+//Escreva um algoritmo que leia um número inteiro e apresente o seu antecessor e o seu sucessor.
+
+VAR
+	INTEIRO:num_inteiro	
+
+INICIO
+
+	ESCREVA("Informe um número inteiro");
+	LEIA("num_inteiro");
+
+	ESCREVA("O numero inteiro é: ",num_inteiro "O antecessor é: ", num_inteiro -1,"O numero sucessor é: ", num_inteiro +1);
+FIM
+
+ALGORITIMO Atividade_4
+//Escreva um algoritmo que leia a nota de três provas de um aluno, calcule e escreva a média final destealuno. 
+Considere que a média é ponderada e que o peso das provas é 2 para a primeira prova, 3 paraa segunda prova e 5 para a terceira prova	
+
+VAR
+	INTEIRO:prova1, prova2, prova3, media;
+	
+INICIO
+	ESCREVA("Informe a Nota da Prova 1: ");
+	LEIA("prova1");
+	
+	ESCREVA("Informe a Nota da Prova 2: ");
+	LEIA("prova2");
+	
+	ESCREVA("Informe a Nota da Prova 3: ");
+	LEIA("prova3");
+
+    	media <- (prova1 * 2  + prova2 * 3 + prova3 * 5 ) / 10;
+	
+	ESCREVA("A Média final é: ", media);
+FIM
+
+ALGORITIMO Atividade_5
+//Escreva um algoritmo que leia uma temperatura em graus Celsius e a apresente convertida em grausFahrenheit
+
+VAR
+
+	REAL: graus;
+
+
+
+ATIVIDADE 12
+
+
+ATIVIDADE 13
+//um dia de sol, você deseja medir a altura de um prédio, porém, a trena não é suficientemente longa.
+Assumindo que seja possível medir sua sombra e a sombra do prédio no chão, e que você lembre desua altura, escreva um algoritmo para ler os dados necessários e calcular a altura do prédio
+
+ALGORITIMO média prédio
+
+VAR
+
+REAL:minha_sombra, sombra_predio, 
+
+INICIO 
+
+
+<-10 * minha_sombra
+
+
+ATIVIDADE 14
+ALGORITIMO Comissão
+
+VAR
+REAL: salario_minimo, qtde_Kwat, Valor_kwat, total_pagar 
+
+SALARIO MINIMO  / 7 = 100 KWAT / 100
+
+INICIO
+
+ESCREVA ("Informe o ");
+LEIA ("");
+
+ESCREVA  ("Informe o ");
+LEIA ("");
+
+total_pagar <- qtde_kwat * valor_kwat
+
+ESCREVA  (":", total_pagar);
+
+FIM
+
+
+ATIVIDADE 15
+ALGORITIMO refrigerante
+
+VAR
+REAL: lata_350, garrafa_600, garrafa_2l, total_litros
+
+INICIO
+
+ESCREVA ("Informe o ");
+LEIA ("");
+
+ESCREVA  ("Informe o ");
+LEIA ("");
+
+total_litros <- (lata_350 * 350 ) + (garrafa_600 * 600 ) +`(garrafa_2l * 2000) /1000
+
+ESCREVA  ("", )
+
+FIM
+
+
+ATIVIDADE 15
+ALGORITIMO refrigerante
+
+VAR
+INTEIRO: quantidade;
+REAL: total_litros;
+
+INICIO
+
+ESCREVA ("Informe quantidade de latas de 350ml: ");
+LEIA ("quantidade");
+
+total <-  total + quantidade *0.35 
+
+ESCREVA  ("Informe o ");
+LEIA ("");
+
+total_litros <- (lata_350 * 350 ) + (garrafa_600 * 600 ) +`(garrafa_2l * 2000) /1000
+
+ESCREVA  ("", )
+
+FIM
+
+
+
+
+ATIVIDADE 16
+ALGORITIMO caixa eletronico
+
+VAR
+INTEIRO: valor_saque, cedulas; 
+
+INICIO
+
+ESCREVA  ("Informe o Valor do Saque ");
+LEIA ("valor_saque");
+
+cedulas <- valor_sanque / 100;
+
+ESCREVA ("Notas de 100", cedulas);
+
+valor_saque <- valor_saque MOD 100;
+
+
+cedulas <- valor_sanque / 50;
+
+ESCREVA ("Notas de 50", cedulas);
+
+valor_saque <- valor_saque MOD 50;
+
+ESCREVA  ("Notas de 50", cedulas ");
+
+
+cedulas <- valor_sanque / 20;
+
+ESCREVA ("Notas de 20", cedulas);
+
+valor_saque <- valor_saque MOD 20;
+
+ESCREVA  ("Notas de 20", cedulas ");
+
+
+cedulas <- valor_sanque / 10;
+
+ESCREVA ("Notas de 10", cedulas);
+
+valor_saque <- valor_saque MOD 10;
+
+ESCREVA  ("Notas de 10", cedulas ");
+
+
+cedulas <- valor_sanque / 5;
+
+ESCREVA ("Notas de 5", cedulas);
+
+FIM
