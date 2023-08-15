@@ -1,0 +1,64 @@
+AULA 1 - LINGUAGEM C
+
+- É uma linguagem compilada, que corrige seu trabalho, ex.: Erro de sintax 
+
+vamos utilizar o PROGRAMIZ
+pode se utilizar tambem: VS CODE e DEV C ++
+
+char = unico caracter
+
+P/ atribuir varialvel utilizamos o sinal de = (igual)
+
+& usa só no scanf - LEITURA
+
+operações Módulo - éo sinal de %
+
+Entrada 
+ESCREVA subbstitui por PRINTF
+
+LEIA substituí scanf
+Saída
+%d - Numero inteiro
+%f - Numero decimal
+%c - Char
+\n - Quebra de linhas
+
+// Online C compiler to run C program online (COMENTARIO)
+
+#include <xxxxx.h> (ENTRADA - BILIOTECA P COLOCAR FUNÇÕES DE ENTRADA E SAÍDA)
+
+int main() { (ENTRADA)
+    // Write C code here (COMENTARIO)
+    printf("Olá Mundo!"); (ESCREVA)
+
+    return 0; (FIM)
+
+}
+
+FUNÇÃO MAIN - FUNÇÃOPRINCIPAL P CÓDIGO EXECUTAR - TEM QUE  USAR
+{
+}
+
+
+PRIMEIRO CÓD EM C 
+
+//Peça ao usuário dois números inteiros  e devolva a soma dos valores digitado pelo usuário
+
+#include <stdio.h>
+
+int main() { (INÍCIO)
+ 
+    int num1, num2, soma; (VARIAVEIS)
+    
+    printf("Informe Primeiro Número: "); (ESCREVA)
+    scanf("%d", &num1); (LEIA)
+    
+    printf("Informe Segundo Número: ");(ESCREVA)
+    scanf("%d", &num2);(LEIA)
+    
+    soma = num1 + num2; (DESCREVE COMO VAI SER FEITO)
+    
+    printf("A soma é: %d", soma); (ESCREVA)
+    
+    return 0; (FIM)
+}
