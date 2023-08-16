@@ -1,0 +1,49 @@
+ATIVIDADE 1 - PROGRAMANDO EM C
+Vamos Replicar as 16 atividades realizadas em Portugal, para Linguagem C
+
+//1. Escreva um algoritmo que calcule a área de um triângulo cuja fórmula é base x altura / 2.
+#include <stdio.h>
+
+int main() {
+    
+    int base, altura, area;
+    
+    printf("Informe a Base: ");
+    scanf("%d", &base);
+    
+    printf("Informe a Altura: ");
+    scanf("%d", &altura);
+    
+    area = base * altura /2;
+    
+    printf("A Área de um Triângulo é: %d",area);
+    
+return 0;
+}
+
+
+
+ESTA DANDO ERRO PEDE APENAS PRIMEIRA LINHA ELE Lê
+#include <stdio.h>
+
+//2. Escreva um algoritmo que leia horas, minutos e segundos do teclado e apresente o tempo total em segundos.
+
+int main () {
+    
+float horas, minutos, segundos, total;
+    
+    printf("Informe Horas: ");
+    scanf("%f", horas);
+    
+    printf("Informe Minutos: ");
+    scanf("%f", minutos);
+    
+    printf("Informe Segundos: ");
+    scanf("%f", segundos);
+    
+    total = horas * 3600 + minutos * 60 + segundos;
+    
+    printf("O total em segundos é: %f", total);
+    
+return 0;
+}
