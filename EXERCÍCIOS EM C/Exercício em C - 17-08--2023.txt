@@ -1,0 +1,190 @@
+// Atividade 1- Escreva um algoritmo que calcule a área de um triângulo cuja fórmula é base x altura / 2
+
+#include <stdio.h>
+
+int main () {
+    
+    int base, altura, area;
+    
+    printf("Informe a Área da Base: ");
+    scanf("%d", &base);
+    
+    printf("Informe a Altura: ");
+    scanf("%d", &altura);
+    
+    area = (base * altura) /2 ;
+    
+    printf("A área do Triângulo é: %d ", area);
+    
+    return 0;
+//Dificuldade/Erro: esqueci alguns ponto e vingula no final. Rodou na 3° compilação pelas faltas de pontuações
+
+}
+
+// Atividade 2 - Escreva um algoritmo que leia horas, minutos e segundos do teclado e apresente o tempo total emsegundos.
+//int main () { - tem que retornar 0; Ou seja sempre usa int main independente da variavel que estará dentro;
+
+#include <stdio.h>
+
+int main () {
+    int horas, minutos, segundos, total_segundos;
+    
+    printf("Informe quantos Horas:");
+    scanf("%d", &horas);
+    
+    printf("Informe quantos Minutos:");
+    scanf("%d", &minutos );
+    
+    printf("Informe quantos Segundos: ");
+    scanf("%d", &segundos);
+    
+    total_segundos = (horas * 3600) + (minutos * 60) + segundos;
+    
+    printf("O tempo total em segunto é: %d ",total_segundos);
+    
+    return 0;
+
+//Dificuldade/Erro: esqueci a vingula no final da variavel total_segundos. Rodou de 1°, identifiquei a falha antes de compilar
+}
+------------------------------------------------------------------------------------------------------------------------------
+
+
+//Atividade 3 - Escreva um algoritmo que leia um número inteiro e apresente o seu antecessor e o seu sucessor
+
+//TENTATIVA 1
+
+#include <stdio.h>
+
+    int main () {
+        
+    int numero, antecessor, sucessor;
+    
+    printf("Informe o Número desejado: ");
+    scanf("%d", &numero);
+    
+    antecessor = numero -1;
+    sucessor = numero +1;
+    
+    printf("Número %d ",numero)
+    printf("Antecessor ao número informado é: %d", antecessor)
+    "Sucessor ao numero informado é: %d", sucessor);
+    
+return 0;
+}
+
+//TENTATIVA 2
+//Escreva um algoritmo que leia um número inteiro e apresente o seu antecessor e o seu sucessor
+
+#include <stdio.h>
+
+    int main () {
+        
+    int numero, antecessor, sucessor;
+    
+    printf("Informe o Número desejado: ");
+    scanf("%d", &numero);
+    
+    antecessor = numero -1;
+    sucessor = numero +1;
+    
+   printf("Antecessor ao número informado é:%d \n", antecessor);
+   printf("Sucessor ao número informado é:%d ", sucessor);
+    
+return 0;
+//Pesquisado solução na internet e adaptada á minha solução.
+
+}
+------------------------------------------------------------------------------------------------------------------------------
+
+//Atividade-4 Escreva um algoritmo que leia a nota de três provas de um aluno, calcule e escreva a média final destealuno. Considere que a média é ponderada e que o peso das provas é 2 para a primeira prova, 3 paraa segunda prova e 5 para a terceira prova
+
+//Escreva um algoritmo que leia a nota de três provas de um aluno, calcule e escreva a média final destealuno. Considere que a média é ponderada e que o peso das provas é 2 para a primeira prova, 3 para a segunda prova e 5 para a terceira prova
+
+#include<stdio.h>
+
+int main () {
+    float prova_1, prova_2, prova_3, media_final;
+    
+    printf("Informe a Nota da Prova 1: ");
+    scanf("%f", &prova_1);
+    
+    printf("Informe a Nota da Prova 2: ");
+    scanf("%f", &prova_2);
+    
+    printf("Informe a Nota da Prova 3: ");
+    scanf("%f", &prova_3);
+    
+    media_final = (prova_1 * 2) + (prova_2 * 3) + (prova_3 * 5) /10;
+    
+    printf("A sua Média Final é: %.2f", media_final);
+    
+    return 0;
+}
+
+
+// Errei no nome da variavel INTEIRA ao inves de REAL / no printf - final ao inves de media_final / : no return 0 ao inves de ; / Esqueci como delimitar as casas decimais prof, ajudou.
+
+------------------------------------------------------------------------------------------------------------------------------
+//Atividade-5 Escreva um algoritmo que leia uma temperatura em graus Celsius e a apresente convertida em grausFahrenheit.
+
+//Escreva um algoritmo que leia uma temperatura em graus Celsius e a apresente convertida em grausFahrenheit.
+
+#include <stdio.h>
+
+int main() {
+    
+    float graus_celsius, graus_fahrenheit;
+    
+    printf("Informe a temperatura em Graus Celsius para ser convertida em Fahrenheit: ");
+    scanf("%f", &graus_celsius);
+    
+    graus_fahrenheit = (graus_celsius * 1.80) + 32;
+    
+    printf("A temperatura em fahrenheit é: %.2f", graus_fahrenheit);
+    
+    return 0;
+
+}  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Atividade 12
+#include <stdio.h>
+#include <locale.h>
+#include <stdlib.h>
+
+int main(){
+	
+	int num1, num2, aux;
+	
+	setlocale (LC_ALL, "Portuguese");
+	
+	printf("Informe numero 1:");
+	scanf("%d", &num1);
+	
+	printf("Informe numero 2");
+	scanf("%d", &num2);
+	
+	aux = num1;
+	num1 = num2;
+	num2 = aux;
+	
+	printf("Número 1: %d e Número 2: %d \n", num1, num2);
+	
+	system("pause");
+	
+	return 0;
