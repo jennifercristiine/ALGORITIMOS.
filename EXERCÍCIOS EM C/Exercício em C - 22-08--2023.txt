@@ -1,0 +1,410 @@
+// Atividade 1- Escreva um algoritmo que calcule a área de um triângulo cuja fórmula é base x altura / 2
+
+#include <stdio.h>
+
+int main () {
+    
+    int base, altura, area;
+    
+    printf("Informe a Área da Base: ");
+    scanf("%d", &base);
+    
+    printf("Informe a Altura: ");
+    scanf("%d", &altura);
+    
+    area = (base * altura) /2 ;
+    
+    printf("A área do Triângulo é: %d ", area);
+    
+    return 0;
+//Dificuldade/Erro: esqueci alguns ponto e vingula no final. Rodou na 3° compilação pelas faltas de pontuações
+
+}
+
+// Atividade 2 - Escreva um algoritmo que leia horas, minutos e segundos do teclado e apresente o tempo total emsegundos.
+//int main () { - tem que retornar 0; Ou seja sempre usa int main independente da variavel que estará dentro;
+
+#include <stdio.h>
+
+int main () {
+    int horas, minutos, segundos, total_segundos;
+    
+    printf("Informe quantos Horas:");
+    scanf("%d", &horas);
+    
+    printf("Informe quantos Minutos:");
+    scanf("%d", &minutos );
+    
+    printf("Informe quantos Segundos: ");
+    scanf("%d", &segundos);
+    
+    total_segundos = (horas * 3600) + (minutos * 60) + segundos;
+    
+    printf("O tempo total em segunto é: %d ",total_segundos);
+    
+    return 0;
+
+//Dificuldade/Erro: esqueci a vingula no final da variavel total_segundos. Rodou de 1°, identifiquei a falha antes de compilar
+}
+------------------------------------------------------------------------------------------------------------------------------
+
+
+//Atividade 3 - Escreva um algoritmo que leia um número inteiro e apresente o seu antecessor e o seu sucessor
+
+//TENTATIVA 1
+
+#include <stdio.h>
+
+    int main () {
+        
+    int numero, antecessor, sucessor;
+    
+    printf("Informe o Número desejado: ");
+    scanf("%d", &numero);
+    
+    antecessor = numero -1;
+    sucessor = numero +1;
+    
+    printf("Número %d ",numero)
+    printf("Antecessor ao número informado é: %d", antecessor)
+    "Sucessor ao numero informado é: %d", sucessor);
+    
+return 0;
+}
+
+//TENTATIVA 2
+//Escreva um algoritmo que leia um número inteiro e apresente o seu antecessor e o seu sucessor
+
+#include <stdio.h>
+
+    int main () {
+        
+    int numero, antecessor, sucessor;
+    
+    printf("Informe o Número desejado: ");
+    scanf("%d", &numero);
+    
+    antecessor = numero -1;
+    sucessor = numero +1;
+    
+   printf("Antecessor ao número informado é:%d \n", antecessor);
+   printf("Sucessor ao número informado é:%d ", sucessor);
+    
+return 0;
+//Pesquisado solução na internet e adaptada á minha solução.
+
+}
+------------------------------------------------------------------------------------------------------------------------------
+
+//Atividade-4 Escreva um algoritmo que leia a nota de três provas de um aluno, calcule e escreva a média final destealuno. Considere que a média é ponderada e que o peso das provas é 2 para a primeira prova, 3 paraa segunda prova e 5 para a terceira prova
+
+//Escreva um algoritmo que leia a nota de três provas de um aluno, calcule e escreva a média final destealuno. Considere que a média é ponderada e que o peso das provas é 2 para a primeira prova, 3 para a segunda prova e 5 para a terceira prova
+
+#include<stdio.h>
+
+int main () {
+    float prova_1, prova_2, prova_3, media_final;
+    
+    printf("Informe a Nota da Prova 1: ");
+    scanf("%f", &prova_1);
+    
+    printf("Informe a Nota da Prova 2: ");
+    scanf("%f", &prova_2);
+    
+    printf("Informe a Nota da Prova 3: ");
+    scanf("%f", &prova_3);
+    
+    media_final = (prova_1 * 2) + (prova_2 * 3) + (prova_3 * 5) /10;
+    
+    printf("A sua Média Final é: %.2f", media_final);
+    
+    return 0;
+}
+
+
+// Errei no nome da variavel INTEIRA ao inves de REAL / no printf - final ao inves de media_final / : no return 0 ao inves de ; / Esqueci como delimitar as casas decimais prof, ajudou.
+
+------------------------------------------------------------------------------------------------------------------------------
+//Atividade-5 Escreva um algoritmo que leia uma temperatura em graus Celsius e a apresente convertida em grausFahrenheit.
+
+//Escreva um algoritmo que leia uma temperatura em graus Celsius e a apresente convertida em grausFahrenheit.
+
+#include <stdio.h>
+
+int main() {
+    
+    float graus_celsius, graus_fahrenheit;
+    
+    printf("Informe a temperatura em Graus Celsius para ser convertida em Fahrenheit: ");
+    scanf("%f", &graus_celsius);
+    
+    graus_fahrenheit = (graus_celsius * 1.80) + 32;
+    
+    printf("A temperatura em fahrenheit é: %.2f", graus_fahrenheit);
+    
+    return 0;
+
+}  
+-----------------------------------------------------------------------------------------------------------------------------
+//Atividade 6 Escreva um algoritmo que apresente a conversão de um valor em reais para dólar, de acordo com ataxa de câmbio informada pelo usuário
+
+#include <stdio.h>
+
+int main () {
+    float valor_reais, taxa_cambio, valor_dolares;
+    
+    printf("Informe o valor em reais: ");
+    scanf("%f", &valor_reais);
+    
+    printf("Informe a taxa de câmbio: ");
+    scanf("%f", &taxa_cambio);
+    
+    valor_dolares = valor_reais / taxa_cambio;
+    
+    printf("A conversão resultou em  %.2f dólares.", valor_dolares);
+    
+    return 0;
+
+}
+
+
+-----------------------------------------------------------------------------------------------------------------------------
+
+// Atividade 7 Escreva um algoritmo que calcule e mostre o consumo médio e a autonomia que um veículo aindateria antes de um abastecimento de combustível.
+ Considere que o veículo sempre seja abastecido atéencher o tanque e que são fornecidas apenas a capacidade do tanque, a quantidade de litrosabastecidos 
+e a quilometragem percorrida desde o último abastecimento.
+
+#include <stdio.h>
+
+int main () {
+    
+    float capacidade_tanque, litros_abastecidos, km_percorridos, consumo_medio, autonomia;
+    
+    printf("Informe a capacidade do tanque: ");
+    scanf("%f", &capacidade_tanque);
+    
+    printf("Informe litros abastecidos: ");
+    scanf("%f", &litros_abastecidos);
+    
+    printf("Informe Kilometros percorridos : ");
+    scanf("%f", &km_percorridos);
+    
+    consumo_medio = km_percorridos / litros_abastecidos ;
+    autonomia = (capacidade_tanque - litros_abastecidos) * consumo_medio;
+    
+    printf("Consumo Médio %f \n", consumo_medio);
+    printf("Autonomia %f", autonomia);
+    
+    return 0;
+}
+-----------------------------------------------------------------------------------------------------------------------------
+
+// Atividade 8 Escreva um algoritmo que pergunte ao usuário a quantidade de km percorridos por um carro alugado e a quantidade de dias pelos quais ele foi alugado.
+ Calcule e mostre o valor a pagar, sabendo que ocarro custa R$ 70,00 por dia e R$ 0,15 por km rodado
+
+#include <stdio.h>
+
+int main () {
+    
+    int dias;
+    float km_percorridos, valor_pagar;
+
+    printf("Informe a quantidade de dias que o Carro foi alugado: ");
+    scanf("%d", &dias);
+    
+    printf("Informe a quantidade de KM percorridos com o Carro Alugado: ");
+    scanf("%f", &km_percorridos);
+    
+    valor_pagar = dias * 70 + km_percorridos * 0.15;
+    
+    printf("O valor a pagar é: R$%.2f", valor_pagar);
+    
+    return 0;
+    
+}
+-----------------------------------------------------------------------------------------------------------------------------
+
+// Atividade 9 Todo restaurante, embora por lei não possa obrigar o cliente a pagar, cobra 10% de comissão para ogarçom.
+ Escreva um algoritmo que leia o valor gasto pelo cliente em um restaurante e mostre o valorda gorjeta e o valor total a ser pago.
+
+//Todo restaurante, embora por lei não possa obrigar o cliente a pagar, cobra 10% de comissão para ogarçom. Escreva um algoritmo que leia o valor gasto pelo cliente em um restaurante e mostre o valorda gorjeta e o valor total a ser pago.
+
+#include <stdio.h>
+
+int main () {
+    
+    float valor_gasto, valor_total;
+    
+    printf("Informe o Valor consumido no Local: ");
+    scanf("%f", &valor_gasto);
+    
+    valor_total = valor_gasto * 0.1 + valor_gasto;
+    
+    printf("Valor total a ser pago é : %.2f", valor_total);
+    
+    return 0;
+    
+}
+
+-----------------------------------------------------------------------------------------------------------------------------
+// Atividade 10 Um vendedor de uma loja de sapatos recebe como pagamento 20% de comissão sobre as vendas domês e R$ 5,00 por cada par de sapatos vendido.
+ Escreva um algoritmo que, dado o valor total dasvendas do mês e o número de sapatos vendidos, mostre qual será o salário do vendedor naquele mês
+
+//Um vendedor de uma loja de sapatos recebe como pagamento 20% de comissão sobre as vendas do mês e R$ 5,00 por cada par de sapatos vendido. Escreva um algoritmo que, dado o valor total das vendas do mês e o número de sapatos vendidos, mostre qual será o salário do vendedor naquele mês
+
+#include <stdio.h>
+
+int main ()
+ {
+    float vendas_mes, salario;
+    int pares_sapatos;
+     
+     printf("Informe o valor das vendas deste mês: ");
+     scanf("%f", &vendas_mes);
+     
+     printf("Informe a quantidade de sapatos vendidos este mês: ");
+     scanf("%d", &pares_sapatos);
+     
+     salario = vendas_mes * 0.2 + pares_sapatos * 5;
+     
+     printf("O seu salario é: R$%.2f", salario);
+     
+     return 0;
+     
+ }
+-----------------------------------------------------------------------------------------------------------------------------
+//Atividade 11 Escreva um algoritmo que leia o número de votos brancos, o número de votos nulos e o número devotos válidos em um município.
+Em seguida, calcule e escreva o percentual de votos brancos, nulos eválidos em relação ao total de eleitores do município
+
+#include <stdio.h>
+
+int main () {
+    float brancos, nulos, validos, total;
+    
+    printf("Informe a quantidade de votos brancos: ");
+    scanf("%f", &brancos);
+    
+    printf("Informe a quantidade de votos nulos: ");
+    scanf("%f", &nulos);
+    
+    printf("Informe a quantidade de votos validos: ");
+    scanf("%f", &validos);
+    
+    total = brancos + nulos + validos;
+    
+     printf(" Percentual de votos Brancos é: %.2f\n", brancos / total );
+     
+    printf("Percentual de votos Nulos é: %.2f\n", nulos / total );
+    
+    printf("Percentual de votos Brancos é: %.2f\n", validos / total );
+    
+    return 0;
+}
+
+-----------------------------------------------------------------------------------------------------------------------------
+// Atividade 12 feito com professor no DEV C++ Escreva um algoritmo que leia dois números inteiros e faça a troca de valores entre eles, 
+apresentandoas variáveis com seus valores trocados
+
+#include <stdio.h>
+#include <locale.h>
+#include <stdlib.h>
+
+int main(){
+	
+	int num1, num2, aux;
+	
+	setlocale (LC_ALL, "Portuguese");
+	
+	printf("Informe numero 1:");
+	scanf("%d", &num1);
+	
+	printf("Informe numero 2");
+	scanf("%d", &num2);
+	
+	aux = num1;
+	num1 = num2;
+	num2 = aux;
+	
+	printf("Número 1: %d e Número 2: %d \n", num1, num2);
+	
+	system("pause");
+	
+	return 0;
+
+-----------------------------------------------------------------------------------------------------------------------------
+//Atividade 13 Num dia de sol, você deseja medir a altura de um prédio, porém, a trena não é suficientemente longa.Assumindo que seja possível medir sua sombra e a sombra do prédio no chão, e que você lembre de sua altura, escreva um algoritmo para ler os dados necessários e calcular a altura do prédio
+
+#include <stdio.h>
+
+int main () {
+    
+    float minha_sombra, sombra_predio, minha_altura, altura_predio;
+    
+    printf("Informe o comprimento da sua sombra: ");
+    scanf("%f", &minha_sombra);
+    
+    printf("Informe o comprimento da sombra do prédio: ");
+    scanf("%f", &sombra_predio);
+    
+    printf("Informe a sua altura: ");
+    scanf("%f", &minha_altura);
+    
+    altura_predio = sombra_predio / minha_sombra * minha_altura;
+    
+    printf("A Altura do prédio é: %.f ", altura_predio);
+    
+    return 0;
+}
+
+-----------------------------------------------------------------------------------------------------------------------------
+// Atividade 14 Antes do racionamento de energia ser decretado, quase ninguém falava em quilowatts; mas, agora,todos incorporaram essa palavra em seu vocabulário.
+ Sabendo-se que 100 quilowatts de energia custaum sétimo do salário mínimo, escreva um algoritmo que receba o valor do salário mínimo e aquantidade de quilowatts
+ gasta por uma residência e mostre na tela: a) o valor em reais de cadaquilowatt e b) o valor total a ser pago
+
+#include<stdio.h>
+
+int main () {
+    
+    float salario_minimo, valor_kw, total_pagar;
+    int quantidade_kw;
+       
+    printf("Informe valor do salário mínimo: ");
+    scanf("%f", &salario_minimo);
+    
+    printf("Informe a quantidade de quilowatts gasta: ");
+    scanf("%d", &quantidade_kw);
+    
+    valor_kw = salario_minimo / 7 / 100;
+    total_pagar = quantidade_kw * valor_kw;
+    
+    printf("Valor kw: %.4f", valor_kw);
+    
+    return 0;
+}
+
+-----------------------------------------------------------------------------------------------------------------------------
+// Atividade 15 Uma fabrica de refrigerantes vende seu produto em três formatos: lata de 350 ml, garrafa de 600 ml egarrafa de 2 litros. 
+Tomando por base que um comerciante compre uma determinada quantidade decada um dos formatos disponíveis, escreva um algoritmo para calcular quantos litros de refrigeranteele comprou.
+
+#include <stdio.h>
+
+int main () {
+    
+    int quantidade, latas_350ml, garrafa_600ml, garrafa_2l;
+    float total_litros;
+    
+    printf("Quantidade de latas de 350ml: ");
+    scanf("%d", &latas_350ml);
+    
+    printf("Quantidade de garrafas de 600ml: ");
+    scanf("%d", &garrafa_600ml);
+    
+    printf("Quantidade de garrafas de 2 litros: ");
+    scanf("%d", &garrafa_2l);
+    
+    total_litros = latas_350ml * 0.35 + garrafa_600ml * 0.6 + garrafa_2l * 2;
+    
+    printf("Total em litros: %.2f", total_litros);
+    
+    return 0;
+}
