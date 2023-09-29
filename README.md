@@ -1,2 +1,4 @@
 # ALGORITIMOS.
-AULA
+- Lógica de Programação (Portugol)
+- Estrutura de Condicionais
+- Estrutura de Repetição
